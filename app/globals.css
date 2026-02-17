@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    z-index: 1;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+
+    /* small devices*/
+    .container {
+        max-width: 466px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    /* small devices*/
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* medium devices*/
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* pc devices*/
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* large screen*/
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .projectsSlider {
+        transform: translateX(0) !important;
+    }
+}
+
+/* animation of banner  */
+@keyframes txt-transform1 {
+    20% {
+        margin: 0;
+        opacity: 1;
+    }
+
+    25% {
+        margin-top: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.txt-transform1 {
+    animation: txt-transform1 15s infinite;
+}
+
+@keyframes txt-transform2 {
+    0% {
+        display: none;
+        opacity: 0;
+
+    }
+
+    25% {
+        display: none;
+        opacity: 0;
+
+    }
+
+    30% {
+        display: block;
+        opacity: 1;
+    }
+
+    60% {
+        margin: 0;
+        opacity: 1;
+    }
+
+    65% {
+        margin-top: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.txt-transform2 {
+    animation: txt-transform2 15s infinite;
+}
+
+@keyframes txt-transform3 {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+
+    65% {
+        display: none;
+        opacity: 0;
+
+    }
+
+    70% {
+        display: block;
+    }
+
+    90% {
+        margin: 0;
+        opacity: 1;
+    }
+
+    95% {
+        margin-top: 50px;
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.txt-transform3 {
+    animation: txt-transform3 15s infinite;
+}
+
+/* skills section */
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+.scrollSkills {
+    animation: scroll 25s infinite linear;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+* {
+    transition: all 1s ease-in-out;
+}
